@@ -1,0 +1,148 @@
+/*Fontes customizadas*/
+@font-face {
+    font-family: Abraham;
+    src: url('../fontes/Abraham.otf');
+}
+
+@font-face {
+   font-family: Agency FB;
+   src: url('../fontes/AGENCYB.TTF');
+}
+
+/*Estilização da página*/
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh 75vh 10vh;
+    grid-column-gap: 5px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    grid-column: 1/3;
+    font-family: Abraham;
+    font-size: 15px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+#esquerda{
+    grid-column: 1/2;
+    background-color:gainsboro;
+}
+
+#esquerda h2{
+    font-family: Agency FB;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+#divsinput{
+    margin-left: 5%;
+    padding-top: 5.6%;
+    padding-bottom: 2%;
+    font-family: Agency FB;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+input{
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus, input:hover{
+    border: 3px solid rgb(3, 129, 255)
+}
+
+#direita{
+    background-color: gainsboro;
+    color: black;
+    font-family: Agency FB;
+    font-size: 150%;
+    text-align: center;
+}
+
+#sucessDiv{
+    background-color: rgb(8, 207, 91);
+    height: 30px;
+    width: 240px;   
+    position: fixed;
+    right: 0;
+    margin-top: 1%;
+    opacity: 0;
+}
+
+#sucessMsg{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 2.3%;
+}
+
+#objeto{
+    background-color: rgb(82, 88, 92); 
+    width: 500px;
+    height: 280px;
+    margin-top: 10%;
+    margin-left: 13%;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+}
+
+#fraseObjeto{
+    color: white;
+    font-family: Agency FB;
+    font-size: 100%;
+    text-align: center;
+    padding-top: 25%;
+}
+
+#btn{
+    background-color: rgb(53, 140, 211);
+    font-size: 25px;
+    margin-top: 5%;
+    /* margin-left: 290px; */
+    padding: 2%;
+    border: 3px solid rgb(27, 101, 150);
+    border-radius: 10px;
+}
+
+#btn:hover{
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    -o-transition: all 200ms ease-in;
+    -o-transform: scale(1.1);
+}
+
+footer{
+    position: relative;
+    background-color: black;
+    color: white;
+    grid-column: 1/3;
+    font-family: Agency FB;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#copyleft{
+    display:inline-block;
+    transform: rotate(180deg);
+}
