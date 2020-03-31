@@ -20,13 +20,13 @@ $(document).ready(function(){
             "-o-border-radius": lista[0]+"px "+lista[1]+"px "+lista[2]+"px "+lista[3]+"px",
         });
 
-        $("#fraseObjeto").css({"padding-top": 17+"%"})
+        $("#fraseObjeto").css({"padding-top": 5+"%"})
 
         $("#fraseObjeto").html(
-            "border-radius: " + lista[0]+"px "+lista[1]+"px "+lista[2]+"px "+lista[3]+"px;<br>" +
-            "-moz-border-radius: " + lista[0]+"px "+lista[1]+ "px "+lista[2]+"px "+lista[3]+"px;<br>" +
-            "-webkit-border-radius: " + lista[0]+"px "+lista[1]+"px "+lista[2]+"px "+lista[3]+"px;<br>" +
-            "-o-border-radius: " + lista[0]+"px "+lista[1]+"px "+lista[2]+"px "+lista[3]+"px;")
+            "<p>border-radius: " + lista[0]+"px "+lista[1]+"px "+lista[2]+"px "+lista[3]+"px;</p>" +
+            "<p>-moz-border-radius: " + lista[0]+"px "+lista[1]+ "px "+lista[2]+"px "+lista[3]+"px;</p>" +
+            "<p>-webkit-border-radius: " + lista[0]+"px "+lista[1]+"px "+lista[2]+"px "+lista[3]+"px;</p>" +
+            "<p>-o-border-radius: " + lista[0]+"px "+lista[1]+"px "+lista[2]+"px "+lista[3]+"px;</p>")
     });
     
     
@@ -41,7 +41,7 @@ $(document).ready(function(){
 let copiarTexto = () => {
 
     const elmtTexto = document.getElementById("fraseObjeto");
-    const texto = elmtTexto.innerHTML.replace(/<br>/g, "\n");
+    const texto = elmtTexto.innerHTML.replace(/<p[^>]*>/g, '').replace(/<\/p>/g, '\n');
     
     let textareaTest = document.createElement("textarea");
     textareaTest.value = texto
