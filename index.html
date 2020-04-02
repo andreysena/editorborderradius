@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <title>Editor de Border Radius</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Editor de Border Radius">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Andrey Sena">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/main.css">
+        <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="JS/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Editor de Border Radius</h1>
+            </header>
+
+            <section id="esquerda">
+                <h2>Edite as bordas do objeto ao lado:</h2>
+                <form>
+                    <div id="divsinput">
+                        <label>Borda superior esquerda:</label>
+                        <input id="tl_border" type="number" min="0" value="0" placeholder="0"> <a>px</a>
+                    </div>
+
+                    <div id="divsinput">
+                        <label>Borda superior direita:</label>
+                        <input id="tr_border" type="number" min="0" value="0" placeholder="0"> <a>px</a>
+                    </div>
+
+                    <div id="divsinput">
+                        <label>Borda inferior esquerda:</label>
+                        <input id="bl_border" type="number" min="0" value="0" placeholder="0"> <a>px</a>
+                    </div>
+
+                    <div id="divsinput">
+                        <label>Borda inferior direita:</label>
+                        <input id="br_border" type="number" min="0" value="0" placeholder="0"> <a>px</a>
+                    </div>
+                </form>
+            </section>
+            
+            <section id="direita"> 
+                <div id="sucessDiv">
+                    <p id="sucessMsg">Texto de estilo copiado com sucesso</p>
+                </div>
+                
+                <div id="objeto">
+                    <p id="fraseObjeto">ME EDITE</p>
+                </div>
+                <button id="btn" type="button" value="COPIAR" onclick="copiarTexto()">Copiar</button>
+            </section>
+
+            <footer>
+                <p><a id="copyleft">©</a> Andrey Sena | andreysena.github.io</p>
+            </footer>
+        </div>
+    </body>
+</html>
