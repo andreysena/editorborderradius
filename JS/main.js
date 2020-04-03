@@ -20,10 +20,10 @@ $(document).ready(function(){
             "-o-border-radius": lista[0]+"px "+lista[1]+"px "+lista[2]+"px "+lista[3]+"px",
         });
 
-        if (window.matchMedia("(min-width:360px)").matches) {
+        if (window.matchMedia("(max-width:1020px)").matches) {
             $("#fraseObjeto").css({"font-size": 60+"%", "padding-top": 6+"%"})
         }else{
-            $("#fraseObjeto").css({"padding-top": 6+"%"})
+            $("#fraseObjeto").css({"padding-top": 5+"%"})
         }
 
 
