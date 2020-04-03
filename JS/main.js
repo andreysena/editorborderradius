@@ -23,7 +23,7 @@ $(document).ready(function(){
         if (window.matchMedia("(max-width:1020px)").matches) {
             $("#fraseObjeto").css({"font-size": 60+"%", "padding-top": 6+"%"})
         }else{
-            $("#fraseObjeto").css({"padding-top": 5+"%"})
+            $("#fraseObjeto").css({"font-size": 100+"%", "padding-top": 5+"%"})
         }
 
 
